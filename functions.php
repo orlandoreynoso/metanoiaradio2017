@@ -69,10 +69,10 @@ wp_nav_menu( array(
 );
 */
 function logo(){
-    $logo = IMAGES.'/logo.png';
+    $logo = IMAGES.'/metanoiaradio.png';
     echo '<a class="logo" href="';
     echo bloginfo('url');
-    echo '"><img src="'.$logo.'" alt="Canal Jesústv"></a>';
+    echo '"><img src="'.$logo.'" alt="Metanoia Radio"></a>';
 }
 
 include (TEMPLATEPATH . '/libs/entradas.php'); 

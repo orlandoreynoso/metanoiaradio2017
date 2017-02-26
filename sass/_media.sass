@@ -1,4 +1,68 @@
 @media screen and (max-width: 420px)
+	.h-portada
+		.e-menu
+			.navbar,.navbar-default
+			.container-fluid
+				.navbar-header
+					background-color: $blanco
+					display: flex
+					flex-flow: row wrap
+					box-sizing: border-box
+					align-content: center
+					align-items: center
+					justify-content: space-between
+					padding-bottom: 20px
+					padding-top: 20px
+					width: 100%
+					margin: 0px
+					.lm
+						padding: 2px
+						max-width: 220px
+						box-sizing: border-box					
+						.navbar-brand
+							height: auto
+							margin: 0px
+							padding: 0px
+							max-width: 210px
+							.logo
+								max-width: 200px
+								vertical-align: middle
+								img
+									width: 100%
+									vertical-align: top
+									display: block
+									&:hover
+										transition: 0.5s ease
+										-o-transition: 0.5s ease
+										-webkit-transition: 0.5s ease
+										filter: alpha(opacity=50)
+										-moz-opacity: 1.0
+										opacity: 0.5
+										-khml-opacity: 1.0
+					.btn-m
+						box-sizing: border-box				
+						.navbar-toggle
+							box-sizing: border-box
+							margin: 0px
+							padding: 10px
+							width: auto
+							min-height: 34px
+							max-height: 34px
+							&:hover
+								color: $blanco
+				.navbar-collapse
+					margin: 0px
+					padding: 15px
+					ul.navbar-nav
+						li
+							font-size: 0.9em
+							a
+								padding: 10px
+								background-color: rgba($verde, 0.0)
+								color: $grisoscuro
+								&:hover
+									color: $verde
+									text-decoration: underline	
 	.dropdown-menu > li > a
 		&:hover
 			background-color: $blanco
@@ -45,8 +109,6 @@
 				.icon
 			.search
 				.searchbar
-	.navbar-header
-		display: block
 	nav
 		background-color: $verde
 		#cuadro_menu
@@ -122,8 +184,6 @@
 				background-color: $verde
 @media screen and (max-width: 650px)	
 @media screen and (max-width: 768px)
-	.navbar-header
-		display: block
 	.m-header
 		.ls
 			margin: 0px auto
@@ -144,14 +204,6 @@
 				.icon
 			.search
 				.searchbar
-	.navbar-default 
-		.navbar-brand
-			&:hover
-				color: $blanco
-		.navbar-toggle
-			&:hover
-				color: $blanco
-				background-color: $verde				
 	.navbar-nav 
 		.open
 			background-color: $blanco
@@ -177,7 +229,73 @@
 				width: 100%
 				.li1,.li2,.li3,.li4
 					display: block
-					
+	.contenedor
+		.h-portada
+			.centro
+				display: none
+	.e-menu
+		.navbar,.navbar-default
+		.container-fluid
+			.navbar-header
+				background-color: $blanco
+				display: flex
+				flex-flow: row wrap
+				box-sizing: border-box
+				align-content: center
+				align-items: center
+				justify-content: space-between
+				padding-bottom: 20px
+				padding-top: 20px
+				width: 100%
+				margin: 0px
+				.lm
+					padding: 2px
+					max-width: 300px
+					box-sizing: border-box					
+					.navbar-brand
+						height: auto
+						margin: 0px
+						padding: 0px
+						max-width: 300px
+						.logo
+							max-width: 300px
+							vertical-align: middle
+							img
+								width: 100%
+								vertical-align: top
+								display: block
+								&:hover
+									transition: 0.5s ease
+									-o-transition: 0.5s ease
+									-webkit-transition: 0.5s ease
+									filter: alpha(opacity=50)
+									-moz-opacity: 1.0
+									opacity: 0.5
+									-khml-opacity: 1.0
+				.btn-m
+					box-sizing: border-box				
+					.navbar-toggle
+						box-sizing: border-box
+						margin: 0px
+						padding: 10px
+						width: auto
+						min-height: 34px
+						max-height: 34px
+						&:hover
+							color: $blanco
+			.navbar-collapse
+				margin: 0px
+				padding: 15px
+				ul.navbar-nav
+					li
+						font-size: 0.9em
+						a
+							padding: 10px
+							background-color: rgba($verde, 0.0)
+							color: $grisoscuro
+							&:hover
+								color: $verde
+								text-decoration: underline	
 @media screen and (max-width: 800px)
 	.groupings
 		.titulo--groupings
@@ -190,7 +308,17 @@
 		.c-recomendaciones
 			width: 100%
 			.list
-				width: 50%	
+				width: 50%
+	.contenedor
+		background-image: none
+		background-position: center center
+		background-repeat: no-repeat
+		background-attachment: fixed
+		background-size: cover
+		background-color: #464646
+		position: absolute 
+		width: 100% 
+		height: 100%				
 @media screen and (max-width: 980px)
 	.groupings
 		.titulo--groupings
@@ -204,3 +332,36 @@
 			width: 100%
 			.list
 				width: 50%	
+	.contenedor
+		.t-3
+		.h-portada
+			.container
+				padding: 0px
+				.row
+					padding: 0px
+					margin: 0px
+			
+			.centro
+				vertical-align: middle
+				padding-top: 15px
+				margin: 0px auto
+				text-align: center
+				padding-bottom: 10px
+				.logo
+					max-width: 280px
+					vertical-align: middle					
+					img
+						max-width: 300px
+						vertical-align: top
+						&:hover
+							transition: 0.5s ease
+							-o-transition: 0.5s ease
+							-webkit-transition: 0.5s ease
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+
+		.c-portada
+			background-color: red
+			margin-top: 100px

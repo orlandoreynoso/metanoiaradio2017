@@ -5,17 +5,7 @@ Template Post Type: post, page, product
  */
 ?>
 <?php get_header(); ?>
-
-<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
-
-<section class="t-1">
-  <article class="logo">
-    <img src="<?php echo IMAGES; ?>/metanoiaradio.png" alt="MetanoiaRadio.com">
-  </article>
-  <article class="titulos">
-    <h1><span class="primary">Metanoia Radio:</span><span class="second">Música que Transforma</span></h1>
-    
-  </article>
+<section class="c-portada">
   <article class="t-3">
             <?php // echo  'estoy en portada MetanoiaRadio';      ?>    
             <?php
