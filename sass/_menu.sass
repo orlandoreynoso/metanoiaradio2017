@@ -1,0 +1,56 @@
+.e-menu
+	background-color: $azul
+	width: 100%
+	.row
+		padding: 0px
+		margin: 0px
+	.navbar
+		border: none
+		padding: 0px
+		margin: 0px
+.navbar-header
+	display: none
+.navbar-default
+	background-color: $azul
+	.navbar-toggle
+		.icon-bar
+			color: $blanco
+			background-color: $blanco
+		&:hover,
+		&:focus
+			background-color: $blanco
+			color: $azul
+			.icon-bar
+				color: $azul
+				background-color: $azul
+	.navbar-brand
+		color: $blanco
+	.navbar-nav
+		li
+			a
+				font-size: 0.9em		
+	.navbar-nav > li > a
+		background-color: $azul
+		color: $blanco
+		li
+			a
+				&:focus
+					color: $blanco
+					background-color: $azul
+		&:hover
+			background-color: $verde
+			color: $blanco
+		&:focus
+			color: $blanco
+			background-color: transparent			
+	.navbar-nav > .active > a
+		background-color: $verde
+		color: $blanco
+	.navbar-nav > .active > a:focus,
+	.navbar-nav > .active > a:hover
+		color: $azul
+		background-color: $verde
+	.navbar-nav > .open > a:focus, 
+	.navbar-nav > .open > a:hover
+		background-color: $verde
+		color: $azul

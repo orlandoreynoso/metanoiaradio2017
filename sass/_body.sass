@@ -1,0 +1,731 @@
+.slide
+	width: 100%
+	margin: 0px auto
+	padding: 0px
+	box-sizing: border-box
+	overflow: hidden
+	background-color: $blanco
+	.metaslider
+		box-sizing: border-box	
+		margin: 0px auto
+		text-align: center
+		min-height: 100%
+		max-width: 100%
+		min-width: 100%		
+	.soliloquy-container
+		width: 100%
+		margin: 0px auto
+	img
+		box-sizing: border-box	
+		width: 100%
+		margin: 0px auto
+		vertical-align: top
+/*================ mixin sidebar =========*/		
+@mixin sidebar()
+	.entradas
+		background-color: $grisclaro
+		.search
+			margin: 0px auto
+			padding-bottom: 10px
+			padding-top: 10px
+			padding-left: 10px
+		.titulo_entradas
+			padding: 10px
+			h3
+				font-size: 1.2em
+				color: $azul
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 10px 0px 10px 0px
+				padding: 0px
+		.recientes
+			margin-bottom: 20px
+			padding-left: 10px
+			padding-right: 10px
+			padding-top: 10px
+			.list
+				padding: 5px
+				margin-bottom: 5px
+				padding-bottom: 9px
+				overflow: hidden
+				border-bottom: 1px solid $celeste
+				text-transform: lowercase
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-between
+				align-items: center
+				box-sizing: border-box
+				.thumb
+					width: 20%
+					img
+						width: 90%
+						height: auto
+						display: inline-block
+						float: left
+						margin-right: 7px
+						box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+						border: 2px solid #ffffff
+						&:hover
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+							transition: 0.5s ease
+							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+				.title
+					color: $celeste
+					line-height: 1.3em
+					font-size: 1.1em
+					text-decoration: none
+					width: 78%
+					text-transform: lowercase
+					&:hover
+						color: $azul
+						transition: 0.5s ease
+						-o-transition: 0.5s ease
+						-webkit-transition: 0.5s ease
+					&:first-letter
+						text-transform: uppercase
+/*==============================*/
+@mixin ahora($color1,$color2,$color3)				
+	.exe
+		margin-top: 5px
+		min-height: 110px
+		font-size: 1.0em
+	.thumb
+		width: 100%
+		height: auto
+		display: block
+		img
+			width: auto
+			max-height: 150px
+			min-height: 150px
+			margin: 0px auto
+			text-align: center
+			vertical-align: middle
+			display: block
+			&:hover
+				filter: alpha(opacity=50)
+				-moz-opacity: 1.0
+				opacity: 0.5
+				-khml-opacity: 1.0
+				transition: 0.5s ease
+				box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+	.title
+		font-family: 'Oswald', sans-serif
+		font-size: 1.55em
+		color: $color1
+		width: 100%
+		text-align: center
+		display: block
+		margin: 5px auto 5px auto
+		&:hover
+			color: $color2
+	.label
+		width: 100%
+		padding: 15px 0px
+		display: block
+		box-sizing: border-box
+		display: flex
+		flex-flow: row wrap
+		.ic-1
+			width: 33%
+			box-sizing: border-box
+			.icon-file3
+				margin-right: 10px
+				color: $color2
+			.icon-file
+				margin-right: 10px
+				color: $color1
+		.ic-2
+			width: 33%
+			box-sizing: border-box		
+			.icon-file2
+				margin-right: 10px
+				margin-left: 10px
+				color: $color1
+		.ic-3
+			width: 33%
+			box-sizing: border-box		
+			.icon-file4
+				margin-right: 10px
+				margin-left: 10px
+				color: $color3		
+		.dia
+			margin-right: 10px
+			color: $color1			
+		a
+			color: $grisoscuro
+			&:hover
+				color: $color1
+/*=======================================================*/		
+.espiritualidad
+	box-sizing: border-box
+	.cuadro-reflexiones
+		background-color: $blanco
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($celeste)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
+		.reflexiones
+			background-color: $blanco
+			box-sizing: border-box
+			.actual
+				box-sizing: border-box
+				background-color: $blanco
+				padding: 20px
+				margin-bottom: 10px				
+				@include ahora($verde,$celeste,$rosa)
+				border-bottom: 1px solid $grismasclaro
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
+/*=================== CRECIMIENTO =========================*/
+.last
+	box-sizing: border-box
+	.cuadro-last
+		background-color: $blanco
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($verde)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
+		.contenido
+			background-color: $blanco
+			box-sizing: border-box
+			padding-top: 10px
+			.actual
+				box-sizing: border-box
+				background-color: $blanco
+				@include ahora($celeste,$verde,$rosa)
+				padding: 5px
+				margin: 0px 0px 10px 0px
+				border-bottom: 1px solid $grismasclaro
+				.thumb
+					width: 100%
+					max-height: 150px
+					display: block
+					img
+						width: 100%
+						max-height: auto
+						margin: 0px auto
+						text-align: center
+						vertical-align: middle
+						display: block
+						&:hover
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+							transition: 0.5s ease
+							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+				.title
+					font-family: 'Oswald', sans-serif
+					font-size: 1.1em
+					color: $celeste
+					width: 100%
+					text-align: center
+					display: block
+					margin: 10px auto
+					padding-bottom: 2px
+					min-height: 70px
+					&:hover
+						color: $verde
+					h3
+						font-size: 1.2em
+						color: $blanco
+						text-transform: uppercase
+						font-family: 'Oswald', sans-serif
+						margin: 0px
+						padding: 0px
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
+/*=================== NOTICIAS =========================*/
+
+.crecimiento
+	box-sizing: border-box
+	.cuadro-crecimiento
+		background-color: $blanco
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($rosa)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
+		.contenido
+			background-color: $blanco
+			box-sizing: border-box
+			padding-top: 10px
+			.actual
+				box-sizing: border-box
+				background-color: $blanco
+				padding: 20px
+				margin-bottom: 10px				
+				@include ahora($celeste,$verde,$rosa)
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
+
+/*=================== Secciones jesustv ====================================*/
+.secciones-jtv
+	.c-info
+		background-color: $blanco
+		min-height: 50px
+		display: flex
+		flex-flow: row wrap
+		box-sizing: border-box
+		justify-content: center
+		padding: 30px
+		.div1,
+		.div2,
+		.div3,
+		.div4
+			box-sizing: border-box
+			display: block
+			margin-bottom: 10px
+			border-radius: 5px
+			img
+				border-radius: 5px
+			.si
+				margin-right: 10px
+				color: $blanco
+			.li1,.li2,.li3,.li4
+				box-sizing: border-box			
+				padding-top: 125px
+				padding-bottom: 15px
+				display: block
+				border-radius: 5px
+				height: 100%
+				width: auto
+				text-align: left
+				padding-left: 20px
+				color: $llema
+				font-weight: bold
+				text-decoration: none
+				text-shadow: 0px 1px 1px rgba(0, 0, 0, 1)
+				&:hover
+					color: $blanco
+					text-shadow: 0px 1px 1px rgba(0, 0, 0, 1)
+					filter: alpha(opacity=60)
+					-moz-opacity: 1.0
+					opacity: 0.6
+					-khml-opacity: 1.0
+					transition: 0.5s ease
+			.li1
+				background-image: url('../images/tv-en-linea.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%
+				border-radius: 5px
+			.li2
+				background-image: url('../images/padre-hugo.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%			
+			.li3
+				background-image: url('../images/googleplay.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%			
+			.li4
+				background-image: url('../images/santo-del-mes.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%					
+/*=======================================================*/
+.info-parroquial
+	.titulo-iglesia
+		text-align: center
+		@include titulo_cuadro($verde)
+		h3
+			font-size: 1.2em
+			color: $grisoscuro
+			text-transform: uppercase
+			font-family: 'Oswald', sans-serif
+			margin: 0px
+			padding: 0px		
+	.c-info
+		background-color: $blanco
+	#iglesia
+		min-height: 50px
+		display: flex
+		flex-flow: row wrap
+		box-sizing: border-box
+		justify-content: center
+		#div1
+			width: 22%
+			min-height: 150px
+			padding: 10px 10px 10px 10px
+			text-align: center
+			background-color: #ffffff
+			a
+				color: #333333
+				font-family: 'Oswald', sans-serif
+				text-transform: uppercase
+				text-decoration: none
+				padding: 0px 0px 8px 0px
+				display: block
+				&:hover
+					color: $celeste
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+				span
+					margin-top: 4px
+					display: block
+				img
+					width: 100%
+			img
+				&:hover
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+					filter: alpha(opacity=50)
+					-moz-opacity: 1.0
+					opacity: 0.5
+					-khml-opacity: 1.0		
+.recomen
+	.titulo-recomendaciones
+		text-align: center
+		@include titulo_cuadro($rosa)
+		h3
+			font-size: 1.2em
+			color: $blanco
+			text-transform: uppercase
+			font-family: 'Oswald', sans-serif
+			margin: 0px
+			padding: 0px
+	.c-recomendaciones
+		padding: 10px
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		box-sizing: border-box
+		.list
+			width: 25%
+			padding: 20px
+			border-bottom: 1px solid $grismasclaro
+			.thumb
+				width: 100%
+				height: auto
+				display: block
+				img
+					max-width: 100%
+					height: auto
+					margin: 0px auto
+					text-align: center
+					vertical-align: middle
+					display: block
+					&:hover
+						filter: alpha(opacity=50)
+						-moz-opacity: 1.0
+						opacity: 0.5
+						-khml-opacity: 1.0
+						transition: 0.5s ease
+						box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+			.title
+				font-family: 'Oswald', sans-serif
+				font-size: 1.55em
+				color: $verde
+				width: 100%
+				text-align: center
+				display: block
+				margin: 10px auto
+				&:hover
+					color: $celeste
+			.label
+				width: 100%
+				padding: 15px 0px
+				display: block
+				text-align: left
+				.icon-file
+					margin-right: 10px
+					color: $verde2
+				a
+					color: $grisoscuro
+					&:hover
+						color: $verde
+
+.groupings
+	.titulo--groupings
+		@include titulo_cuadro($celeste)
+		text-align: center
+		h3
+			font-size: 1.2em
+			color: $grisoscuro
+			text-transform: uppercase
+			font-family: 'Oswald', sans-serif
+			margin: 0px
+			padding: 0px
+	.c-agrupaciones
+		padding: 10px
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		box-sizing: border-box
+		.list
+			width: 25%
+			padding: 20px
+			border-bottom: 1px solid $grismasclaro
+			.exe
+				margin-top: 10px
+			.thumb
+				width: 100%
+				height: auto
+				display: block
+				img
+					max-width: 100%
+					height: auto
+					margin: 0px auto
+					text-align: center
+					vertical-align: middle
+					display: block
+					&:hover
+						filter: alpha(opacity=50)
+						-moz-opacity: 1.0
+						opacity: 0.5
+						-khml-opacity: 1.0
+						transition: 0.5s ease
+						box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+			.title
+				font-family: 'Oswald', sans-serif
+				font-size: 1.55em
+				color: $verde
+				width: 100%
+				text-align: center
+				display: block
+				margin: 10px auto
+				&:hover
+					color: $celeste
+			.label
+				width: 100%
+				padding: 15px 0px
+				display: block
+				text-align: left
+				.icon-file
+					margin-right: 10px
+					color: $verde2
+				a
+					color: $grisoscuro
+					&:hover
+						color: $verde
+/*==================== contenido programas   ==================================*/
+.con-programas
+	background-color: $blanco
+	padding-top: 10px
+	margin-bottom: 20px
+	.con
+		.titulo
+			@include titulo_cuadro($azul)
+			color: $blanco
+			margin-bottom: 5px	
+		.contenido
+			margin-bottom: 10px
+			padding-bottom: 10px
+			margin-top: 10px
+			.title
+				font-size: 1.5em
+				font-family: 'Oswald', sans-serif
+				color: $azul
+				&:hover
+					color: $verde
+			.date-cat
+				padding: 10px
+				.fecha
+					font-family: 'Oswald', sans-serif					
+					font-size: 0.9em
+					color: $azul
+					.icon-date
+						margin-right: 5px
+						color: $oro
+				.descripcion_categoria
+					font-family: 'Oswald', sans-serif					
+					font-size: 0.9em
+					float: right
+					text-align: right
+					color: $rosa
+					.icon-file
+						margin-right: 5px
+						color: $oro
+					a
+						color: $azul
+						&:hover
+							color: $verde
+			.thumb
+				padding: 5px
+				img
+					width: 100%
+					height: auto
+					&:hover
+						filter: alpha(opacity=50)
+						-moz-opacity: 1.0
+						opacity: 0.5
+						-khml-opacity: 1.0
+						transition: 0.5s ease
+						box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)						
+			.info
+				padding: 5px 10px 10px 10px
+				line-height: 1.625em
+				font-size: 1.0625em
+				color: #302f2f
+				font-family: "Open Sans", sans-serif	
+	.side
+		@include sidebar()				
+/*======================= contenido general principal ==========================*/
+.con-general
+	background-color: $blanco
+	padding-top: 10px
+	.con
+		margin-bottom: 20px
+		.contenido
+			border-bottom: 1px solid rgba($grisoscuro, 0.4)
+			margin-bottom: 10px
+			padding-bottom: 10px
+			margin-top: 10px
+			.title
+				font-size: 1.5em
+				font-family: 'Oswald', sans-serif
+				color: $azul
+				&:hover
+					color: $verde
+			.date-cat
+				padding: 10px
+				.fecha
+					font-family: 'Oswald', sans-serif					
+					font-size: 0.9em
+					color: $azul
+					.icon-date
+						margin-right: 5px
+						color: $oro
+				.descripcion_categoria
+					font-family: 'Oswald', sans-serif					
+					font-size: 0.9em
+					float: right
+					text-align: right
+					color: $rosa
+					.icon-file
+						margin-right: 5px
+						color: $oro
+					a
+						color: $azul
+						&:hover
+							color: $verde
+			.thumb
+				padding: 5px
+			.info
+				padding: 5px 10px 10px 10px
+				line-height: 1.625em
+				font-size: 1.0625em
+				color: #302f2f
+				font-family: "Open Sans", sans-serif				
+/*====================== contenido general ======================*/
+.con-general
+	.con
+		img
+			max-width: 100%
+			height: auto
+		.alignleft
+			float: left
+			margin: 20px 20px 20px 0px
+		.alignright
+			float: right
+			margin: 20px 0px 20px 20px
+		.aligncenter
+			width: 100%
+			height: auto
+			margin: 5px auto
+		.interiores
+			line-height: 1.625em
+			font-size: 1.0625em
+			color: $textogris
+			font-family: 'Open Sans', sans-serif
+		.titulo
+			@include titulo_cuadro($azul)
+			color: $blanco
+			margin-bottom: 5px
+			.mapeo
+				a
+					color: $llema
+					font-weight: bold
+					padding: 0px 4px 0px 4px
+					&:hover
+						color: $verde
+						font-weight: bold
+						transition: 0.5s ease
+	.side
+		@include sidebar()
+/*------------------------------------*/
+/*----*/
+footer
+	width: 100%
+	background-color: $azul
+
+/*---*/
+#pie
+	background-color: $azul
+	min-height: 150px
+	.group
+		padding: 50px
+		text-align: center
+		color: #ffffff
+		line-height: 1.5em
+		font-family: 'Economica-Bold'
+		text-shadow: 1px 2px 1px #000
+		font-size: 1.2em
+		a
+			color: $celeste
+			&:hover
+				color: #f2f2f2
+				transition: 0.5s ease
+				-o-transition: 0.5s ease
+				-webkit-transition: 0.5s ease
+
+/*----*/		
+#totop
+	display: none
+	text-decoration: none
+	position: fixed
+	bottom: 40px
+	margin-left: 640px
+	overflow: hidden
+	width: 43px
+	height: 28px
+	border: none
+	text-indent: -999px
+	z-index: 20
+	background: url("../images/totop.png") no-repeat left 0
+	transition: 0s ease
+	-o-transition: 0s ease
+	-webkit-transition: 0s ease
+	&:hover
+		outline: none
+		background-position: right 0
+

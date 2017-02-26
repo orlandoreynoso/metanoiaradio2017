@@ -1,0 +1,5 @@
+<?php  
+
+last_publicaciones();
+
+?>	
