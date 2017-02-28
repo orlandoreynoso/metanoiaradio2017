@@ -1975,6 +1975,9 @@ footer {
         transition: 0.5s ease; }
 
 @media screen and (max-width: 420px) {
+  .contenedor .c-portada .last .recientes .list {
+    width: 100%; }
+
   .h-portada {
     background-color: #ffffff; }
     .h-portada .e-menu .container-fluid .navbar-header {
@@ -2193,6 +2196,8 @@ footer {
     .secciones-jtv .c-info .div4 .li4 {
       display: block; }
 
+  .contenedor .c-portada .last .recientes .list {
+    width: 100%; }
   .contenedor .h-portada .centro {
     display: none; }
 
@@ -2280,6 +2285,13 @@ footer {
       background-color: #4bae4f;
       width: 100%;
       padding: 20px; }
+      .contenedor .c-portada .short-description {
+        padding-top: 20px;
+        color: #202020;
+        font-size: 1.2em;
+        text-shadow: none; }
+        .contenedor .c-portada .short-description strong {
+          color: #0166ff; }
     .contenedor .h-portada {
       background-color: #ffffff; }
       .contenedor .h-portada .container {

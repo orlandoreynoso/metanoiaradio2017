@@ -66,16 +66,18 @@ function last_portada(){
 $the_query = new WP_Query( $args_10);    
 // The Loop
 if ( $the_query->have_posts() ) {
+        echo '<div class="row">';
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
-        <div class="list">            
-            <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
-            <div class="exe"><?php the_excerpt(); ?> </div>
-        </div>
+            <div class="list col-xs-12 col-md-3">            
+                <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+                <div class="exe"><?php the_excerpt(); ?> </div>
+            </div>
         <?php }} else {
         echo 'No hay artículos';    
+        echo '</div>';
     // no se encontraron artículos
 }
 /* Restore original Post Data */
