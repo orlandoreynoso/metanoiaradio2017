@@ -8,11 +8,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/estilo.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />
 	<script type='text/javascript' src='<?php  bloginfo('stylesheet_directory'); ?>/js/analitycs.js'></script>	
+    <script language="javascript" type="text/javascript" src="http://us3.listen2myradio.com:2199/system/streaminfo.js"></script>	
 	<?php wp_head(); ?>
 </head>

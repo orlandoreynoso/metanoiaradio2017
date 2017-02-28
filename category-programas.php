@@ -9,8 +9,6 @@
 
 ?>
 
-<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
-
 <section class="con-programas">
   <div class="container">
      <div class="row">

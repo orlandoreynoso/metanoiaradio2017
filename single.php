@@ -9,13 +9,12 @@
 
 ?>
 
-<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
-
 <section class="con-general">
 
   <div class="container">
      <div class="row">
         <div class="col-xs-12 col-md-8 con">
+          <?php // echo 'estoy en single'; ?>
             <div class="titulo">
             <div class="mapeo"><?php the_breadcrumb(); ?></div>
             </div>

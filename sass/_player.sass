@@ -1,0 +1,100 @@
+.contenedor
+	.c-portada
+		.play
+			background-color: rgba($grisoscuro, 1)
+			width: 100%
+			padding-top: 10px
+			padding-bottom: 10px
+			.container
+				.row
+					padding: 0px
+					margin: 0px
+					.m-reproductor
+						padding: 10px
+						text-align: center
+						margin: 0px auto
+						.controles
+							.bbt-4,.bbt-3,.bbt-2,.bbt-1
+								background-color: $verde
+								box-sizing: border-box
+								width: 30px
+								height: 30px
+								display: inline-block
+								border-radius: 100%
+								margin: 0px auto
+								&:hover
+									transition: 0.5s ease
+									color: $celeste								
+								button
+									border: none
+									width: 100%
+									height: 100%
+									text-align: center
+									margin: 0px auto
+									background-color: $verde
+									border-radius: 50px
+									&:hover
+										transition: 0.5s ease
+										color: $blanco
+										background-color: $celeste										
+									.pla
+										color: $blanco
+										padding: 0px
+										margin: 0px
+										font-size: 0.8em
+										&:hover
+											transition: 0.5s ease
+											color: $celeste
+											background-color: $celeste
+						.pls
+
+					.playing
+						box-sizing: border-box
+						width: 100%
+						.cc_streaminfo
+							color: $celeste
+							clear: both
+							display: block
+							padding-top: 10px
+							padding-bottom: 10px
+						strong
+							color: $verde
+							line-height: 1.2em
+							font-weight: strong
+						.listens
+							width: 100%
+							box-sizing: border-box
+							text-align: center
+							padding-top: 10px
+							a
+								width: 25px
+								display: inline-block
+								img
+									width: 100%
+									height: auto
+									&:hover
+										filter: alpha(opacity=50)
+										-moz-opacity: 1.0
+										opacity: 0.5
+										-khml-opacity: 1.0
+										transition: 0.5s ease
+						.sonando
+							width: 100%
+							box-sizing: border-box
+							display: flex
+							flex-flow: row wrap
+							align-items: center
+							align-content: center
+							justify-content: center
+							.suena
+								padding: 4px
+								color: $blanco
+								margin: 0px
+								font-size: 0.9em
+							.description
+								padding: 4px
+								text-transform: capitalize
+								a
+									display: block
+									padding: 0px
+									margin: 0px

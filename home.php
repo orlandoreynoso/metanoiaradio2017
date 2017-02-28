@@ -1,17 +1,17 @@
 <?php 
 /*
-Template Name: homeJesustv
+Template Name: HomeMetanoia
 Template Post Type: post, page, product
  */
 ?>
 <?php get_header(); ?>
 
-<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
-
 <section class="con-general">
 
   <div class="container">
      <div class="row">
+
+      <?php  // echo 'Estoy en home' ?>
           <div class="col-xs-12 col-md-8 con">
           <div class="titulo">
             <div class="mapeo"><?php the_breadcrumb(); ?></div>
