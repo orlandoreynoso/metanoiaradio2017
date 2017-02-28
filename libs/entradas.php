@@ -70,7 +70,7 @@ if ( $the_query->have_posts() ) {
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
-            <div class="list col-xs-12 col-md-3">            
+            <div class="list col-xs-12 col-sm-6 col-md-3 col-lg-3">            
                 <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
                 <div class="exe"><?php the_excerpt(); ?> </div>
